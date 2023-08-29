@@ -1,0 +1,112 @@
+.section-subscribe .container {
+    width: 100%;
+    flex-wrap: wrap;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+          url(/img/subcribe.jpg);
+    padding-top: 62px;
+    padding-bottom: 63px;
+    transition: background-color 250ms var(--cubic-bezier),
+    color 250ms var(--cubic-bezier);
+}
+
+
+.titel-subscribe{
+margin-left: auto;
+margin-right: auto;
+max-width: 291px;
+text-align: center;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;    
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: -0.03em;
+color: #fff;
+margin-bottom: 24px;
+
+}
+
+.text-subscribe{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.button-subscribe{
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 128px;
+    height: 41px;
+    background-color: #FD9222;
+    border: 1px solid #FD9222;
+    border-radius: 100px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 28px;
+    padding-right: 28px;
+    color: #fff;
+    font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.2;
+    transition: background-color 250ms var(--cubic-bezier),
+            color 250ms var(--cubic-bezier);
+}
+.button-subscribe:is(:hover, :focus) {
+    background-color: #FCF1E0;
+    color: #FD9222;
+    border: 1px solid #FCF1E0;
+}
+
+@media screen and (min-width: 380px) {
+    .section-subscribe .container {
+        width: 375px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section-subscribe .container {
+        width: 744px;
+        justify-content: center;
+        padding-top: 72px;
+         padding-bottom: 72px;
+         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+                    url(/img/subcribe-t.jpg);
+    }
+        .titel-subscribe{
+                width: 378px;
+                font-size: 24px;
+                line-height: 1.16;
+                letter-spacing: -0.03em;
+            }
+        .text-subscribe {
+            color: #fff;
+            width: 467px;
+            justify-content: center;
+
+        }
+                .button-subscribe {
+                    width: 172px;
+                    height: 50px;
+                    font-size: 18px;
+                    line-height: 1.2;
+                }
+}
+
+@media screen and (min-width: 1200px) {
+    .section-subscribe .container {
+        width: 1176px;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+                url(/img/subcribe-d.jpg);
+    }
+}

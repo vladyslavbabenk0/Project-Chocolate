@@ -1,0 +1,77 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+
+/*     utils     */
+
+@import url('./utils/varibles.css');
+
+/*    base      */
+
+@import url('./base/reset.css');
+@import url('./base/common.css');
+
+
+/*     components     */
+
+@import url('./components/container.css');
+@import url('./components/button.css');
+
+/*    modal    */
+@import url('./modal/main-m.css');
+@import url('./modal/buy-now.css');
+@import url('./modal/thank-you.css');
+@import url('./modal/leave-review.css');
+@import url('./modal/feedback.css');
+@import url('./modal/explore.css');
+
+
+ /*     layout        */
+
+
+@import url('./layout/header.css');
+@import url('./layout/hero.css');
+@import url('./layout/advantages.css');
+@import url('./layout/components.css');
+@import url('./layout/how-made.css');
+@import url('./layout/products.css');
+@import url('./layout/top.css');
+@import url('./layout/reviews.css');
+@import url('./layout/subscribe.css');
+@import url('./layout/footer.css');
+
+
+
+
+
+:root {
+  --buy-now: #FD9222;
+  --buy-now-hover: #FCF1E0;
+  --how-made: #1E1823;
+  --button-background: #FAFAFA;
+  --button-text: #FFFFFF;
+  --elipse-b: #111111;
+  --elipse-tf: #1E1823;
+  --sliders: rgba(17, 17, 17, 0.1);
+  --reviews-text: rgba(17, 17, 17, 0.7);
+  --advantages-text: rgba(255, 255, 255, 0.7);
+  --ul: #4C4C4C;
+  --ul-color: #ECEDED;
+  --border: rgba(255, 255, 255, 0.5);
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --cubic-bezier: (0.075, 0.82, 0.165, 1);
+  --shadow: rgba(215, 228, 249, 0.25);
+  --chocolate: rgba(253, 146, 34, 1);
+  --backdrop: rgba(25, 28, 38, 0.456);
+  --placeholder-color: rgba(64, 64, 64, 0.3);
+  --border: 1.5px solid rgba(17, 17, 17, 0.05);
+  --filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}

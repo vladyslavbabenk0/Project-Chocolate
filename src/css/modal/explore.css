@@ -1,0 +1,179 @@
+/* Overlay */
+.explore-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--backdrop);
+  transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
+}
+
+/* Modal Window */
+.explore-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 350px;
+  background-color: var(--button-background);
+  background-image: url(/img/tetiana-bykovets-m.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  transform: translate(-50%, -50%) scaleY(1);
+  transition: transform 250ms var(--cubic);
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .explore-modal {
+    background-image: url(/img/tetiana-bykovets-m.jpg);
+  }
+}
+
+.explore-backdrop.is-hidden .explore-modal {
+  transform: translate(-50%, -50%) scaleY(0);
+}
+
+/* Modal Close Button */
+.explore-modal-close {
+  display: block;
+  margin: 21px 20px 136px auto;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  color: var(--button-text);
+  transition: color 250ms var(--cubic);
+}
+
+.explore-modal-close:is(:hover, :focus) {
+  color: var(--buy-now);
+}
+
+.explore-modal-close-icon {
+  width: 12px;
+  height: 12px;
+  fill: currentColor;
+}
+
+.explore-modal-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--elipse-b);
+  max-width: 260px;
+  margin-bottom: 28px;
+}
+
+.explore-modal-title span {
+  color: var(--buy-now);
+}
+
+.explore-subscribe {
+  padding: 32px 24px;
+}
+
+/* Form */
+.explore-subscribe-input-wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* outline: 1px solid red; */
+}
+
+.explore-subscribe-input {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 313px;
+  height: 45px;
+  padding-left: 24px;
+  border: var(--border);
+  filter: var(--filter);
+  border-radius: 25px;
+  background-color: transparent;
+  outline: transparent;
+}
+
+.explore-subscribe-input::placeholder {
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: var(--placeholder-color);
+}
+
+.explore-subscribe-submit {
+  position: absolute;
+  right: 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+  color: var(--button-text);
+  width: 100px;
+  height: 45px;
+  background-color: var(--buy-now);
+  border-radius: 100px;
+  transition: color 250ms var(--cubic), background-color 250ms var(--cubic);
+}
+
+.explore-subscribe-submit:is(:hover, :focus) {
+  color: var(--buy-now);
+  background-color: var(--buy-now-hover);
+}
+
+/* Mobile Styles */
+@media screen and (min-width: 375px) {
+  .explore-modal {
+    width: 311px;
+    height: 350px;
+  }
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 768px) {
+  .explore-modal {
+    width: 538px;
+    height: 412px;
+    background-image: url(/img/tetiana-bykovets-t-d.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .explore-modal {
+      background-image: url(/img/tetiana-bykovets-t-d.jpg);
+    }
+  }
+
+  .explore-modal-close {
+    margin: 31px 31px 151px auto;
+  }
+
+  .explore-subscribe {
+    padding: 40px;
+  }
+
+  .explore-subscribe-input {
+    width: 313px;
+    height: 52px;
+    padding: 14px 18px;
+  }
+
+  .explore-subscribe-input::placeholder {
+    font-size: 18px;
+  }
+
+  .explore-subscribe-submit {
+    position: unset;
+    width: 137px;
+    height: 52px;
+  }
+}

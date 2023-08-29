@@ -1,0 +1,159 @@
+.hero-section{
+    margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 72px;
+}
+.hero-section .container{
+    padding-top: 355px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+            url(/img/chocolate-covered-cocoa-powder-m.jpg);
+        border-radius: 30px;
+}
+.titel-hero{
+    font-family: 'Montserrat';
+        font-size: 20px;
+        line-height: 1.2;
+        color: #fff;
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 32px;
+}
+.hero-button{
+        display: flex;
+        background-color: #FD9222;
+            border: 1px solid #FD9222;
+        border-radius: 100px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 28px;
+        padding-right: 28px;
+        color: #fff;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.2;
+        margin-right: 14px;
+        transition: background-color 250ms var(--cubic-bezier),
+                color 250ms var(--cubic-bezier);
+}
+
+.hero-button:is(:hover, :focus) {
+    background-color: #FCF1E0;
+        color: #FD9222;
+        border: 1px solid #FCF1E0;
+}
+
+.button-group{
+    display: flex;
+    text-align: left;
+    margin-left: 20px;
+        margin-right: auto;
+        margin-bottom: 32px;
+}
+.hero-button.none{
+background-color: rgba(28, 28, 28, 0);
+border: 1px solid #FFFFFF;
+color: #fff;
+transition: background-color 250ms var(--cubic-bezier),
+        color 250ms var(--cubic-bezier);
+}
+
+.hero-button.none:is(:hover, :focus) {
+    background-color: #FFFFFF;
+    color: #FD9222;
+    border: 1px solid #FD9222;
+}
+.scroll-group{
+display: flex;
+margin-left: 20px;
+margin-right: auto;
+align-items: center
+}
+.scroll-hero{
+    font-family: 'Montserrat';
+        font-size: 12px;
+        line-height: 1.16;
+        color: #fff;
+        margin-right: 12px;
+}
+.scroll-button{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+     background-color: #fff;
+}
+.scroll-menu {
+    height: 12.83px;
+    fill: #FD9222;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+@media screen and (min-width: 380px) {
+    .hero-section .container {
+        width: 375px;
+    }
+        .hero-section{
+            max-width: 375px;
+        }
+}
+@media screen and (min-width: 768px) {
+    .hero-section .container {
+            width: 744px;
+            padding-top: 671px;
+                padding-bottom: 40px;
+                background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+                        url(/img/chocolate-covered-cocoa-powder-t.jpg);
+        }
+    .hero-section {
+                    max-width: 744px;
+                }
+        .titel-hero {
+            font-family: 'Montserrat';
+            font-size: 28px;
+            line-height: 1.21;
+            color: #fff;
+            text-align: left;
+            padding-left: 40px;
+            padding-right: auto;
+            margin-bottom: 32px;
+            width: 484px;
+        }
+.button-group{
+    margin-left: 40px;
+    margin-right: 153px;
+    margin-bottom: 0;
+}
+.scroll-group{
+        margin-right: 0;
+        margin-left: 0;
+}
+.hero-allbutton{
+    display: flex;
+    align-items: center
+}
+}
+@media screen and (min-width: 1200px){
+    .hero-section .container {
+            width: 1176px;
+            padding-top: 381px;
+            padding-bottom: 40px;
+            background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+                    url(/img/chocolate-covered-cocoa-powder-d.jpg);
+        }
+    .hero-section {
+            max-width: 1176px;
+        }
+        .button-group {
+             margin-right: 585px;
+             margin-bottom: 0;
+                 }
+}
